@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-t{
+    color: rgba(46, 41, 42, 1);
+    font-size: 40px;
+    text-shadow: 2px 2px 4px gray;
+    margin-bottom: 32px;
+}
+
+.hall{
+    width: 1440px;
+    height: 550px;
+}
+
+
+.fotos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.fotos div{
+    height: 100%;
+    width: 20%;
+    
+    background-position: center;
+    
+    background-size: cover;
+    transition: 1s;
+}
+.fotos div:hover{
+    width: 60%;
+}
+
+.nav-t2{
+    text-align: right;
+    font-size: 50px;
+    margin-bottom: 55px;
+    margin-top: 6px;
+}
+.container{
+    display: grid;
+    justify-content: center;
+}
+.nav-t2 a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.nav2-2{
+    font-size: 40px;
+}
+.footer{
+    display: flex;
+    height: 492px;
+    background-color: rgba(46, 41, 42, 1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    font-family: "Archivo Black", sans-serif;
+    font-size: 50px;
+    color: white;   
+}
+.img-1{
+    display: flex; 
+    gap: 27px;
+    margin-bottom: 27px;
+}
+.img-2{
+    display: flex; 
+    gap: 27px;
+}
+.img-1 img:hover{
+    width: 308px;
+    height: 447px;
+    transition: all 1s;
+}
+.image-container{
+    width: 330px;
+    height: 479px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.image-container:hover img {
+    transform: scale(0.9);
+}
+.image-container:hover .text-overlay {
+    opacity: 1;
+}
+.text-overlay{
+    position: absolute;
+    color: white;
+    top: 61.8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(28, 27, 27, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 298px;
+    font-size: 20px;
+    height: 320px;
+    box-sizing: border-box;
+    border-radius: 0;
+    text-align: center;
+}
+.text-overlay a{
+    text-decoration: none;
+    color: rgba(71, 177, 152, 1);
+}
+.text-overlay .buylink a{
+    border: none;
+    color: white;
+    
+    text-align: center;
+    font-size: 25px;
+}
+.text-overlay .buylink{
+    background-color: rgba(71, 177, 152, 1);
+    padding-top: 17px;
+    width: 274px;
+    height: 63px;
+}
+.text-container{
+    height: 547px;
+
+
+    display: inline-block;
+}
+.text-con{
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 50%);
+    position: absolute;
+
+    top: 10%;
+    transition: transform 0.3s ease;
+}
+.text-container:hover .text-con{
+    transform: translateY(-66px);
+}
+.text-container:hover .text-con2{
+    transform: translateY(66px);
+}
+.text-container:hover .th1{
+    opacity: 1;
+}
+.text-con2{
+    position: absolute;
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+
+    top: 10%;
+    transition: transform 0.3s ease;
+}
+.text-con h1{
+    font-size: 260px;
+    color: rgba(242, 102, 203, 1);
+}
+.text-con2 h1{
+    font-size: 260px;
+    color: rgba(106, 50, 226, 1);
+}
+.tetx-middle{
+    position: absolute;
+    
+}
+.th1{
+    color: white;
+    background-color: black;
+    margin-top: 13%;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 35px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
